@@ -2,21 +2,35 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, #012aa5, #0090F0, #012aa5);
 }
 
 .produtos{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 40px;
-    margin: 20px auto;
-    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px  10px;
+
+    width: 100%;
 }
 
 .produto{
-    display: flex;
-    width: 100%;
 
-    border: solid 2px black;
+    &:hover{
+        transition: ease-in 1s;
+        transform: scale(1.02);
+    }
+
+    margin: 10px auto;
+    display: flex;
+
+    border: 2px black solid;
+    width: 450px;
+    background-color: white;
+    border-radius: 12px;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -27,23 +41,25 @@
     
     h2{
         color: blue;
-        font-size: 28px;
+        margin-top: 10px;
+        font-size: 24px;
+        width: 100%;
+
         font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
+    
     }
 
     p{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 70%;
+        width: 95%;
+        font-size: 16px;
         color: gray;
     }
 
     a{
         display: flex;
-
-        margin-bottom: 10px;
         align-items: center;
+        margin-top: 30px;
+        margin-bottom: 5px;
         justify-content: center;
         width: 150px;
         height: 30px;

@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px black solid;
+
+    img {
+        width: 140px;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: black;
+            font-weight: bold;
+            font-family: "Poppins";
+            text-decoration: none;
+
+            &:hover {
+                color: blue;
+                text-decoration: underline;
+            }
+        }
+    }
+}
