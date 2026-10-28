@@ -30,10 +30,12 @@
     border-radius: 12px;
     align-items: center;
     text-align: center;
+    padding: 10px;
     flex-direction: column;
     img{
         width: 200px;
-     
+        height: 200px;
+        object-fit: contain;
     }
     
     h2{
@@ -55,7 +57,7 @@
     a{
         display: flex;
         align-items: center;
-        margin-top: auto;
+  
         margin-bottom: 5px;
         justify-content: center;
         width: 150px;
