@@ -5,9 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background: linear-gradient(90deg, #012aa5, #0090F0, #012aa5);
-}
 
 .produtos{
     display: grid;
@@ -26,7 +23,7 @@ body{
 
     margin: 10px auto;
     display: flex;
-
+    gap: 10px;
     border: 2px black solid;
     width: 450px;
     background-color: white;
@@ -36,7 +33,7 @@ body{
     flex-direction: column;
     img{
         width: 200px;
-        padding: 20px;
+     
     }
     
     h2{
@@ -58,7 +55,7 @@ body{
     a{
         display: flex;
         align-items: center;
-        margin-top: 30px;
+        margin-top: auto;
         margin-bottom: 5px;
         justify-content: center;
         width: 150px;

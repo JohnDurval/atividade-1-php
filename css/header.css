@@ -7,6 +7,7 @@ header {
     align-items: center;
     background-color: white;
     border-bottom: 2px black solid;
+    background-color: rgb(83, 83, 255);
 
     img {
         width: 140px;
@@ -17,13 +18,13 @@ header {
         gap: 20px;
 
         a {
-            color: black;
+            color: white;
             font-weight: bold;
             font-family: "Poppins";
             text-decoration: none;
 
             &:hover {
-                color: blue;
+                color: rgb(145, 145, 195);
                 text-decoration: underline;
             }
         }

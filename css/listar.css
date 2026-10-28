@@ -5,21 +5,118 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    min-height: 100vh;
+
+}
+
 .user-container {
     flex: 1;
     margin-top: 50px;
     margin-bottom: 50px;
-  
+
 }
+
 
 .usuarios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    gap: 20px;
 }
+
+.usuario-btn {
+    display: flex;
+
+    margin-left: 1.2%;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    h1 {
+        font-size: 50px;
+        color: #0066FF;
+        background-clip: text;
+
+    }
+
+    a {
+        width: 16%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 12px;
+        padding: 10px;
+        border: solid 3px #0066FF;
+        background-color: white;
+ 
+        border-radius: 12px;
+        text-decoration: none;
+        color: #0066FF;
+        font-weight: bold;
+        font-size: 20px;
+
+        img{
+            width: 30px;
+        }
+
+
+
+    }
+}
+
 
 .usuario {
     display: flex;
-    text-align: left;
+    justify-content: flex-start;
+   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 350px;
+    padding-bottom: 10px;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid rgb(156, 156, 156);
+    border-left: #0066FF 4px solid;
+    border-bottom: #0066FF 6px solid;
+    line-height: 1.4;
+    border-radius: 12px;
+
+
+    .foto-user{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        gap: 47%;
+        margin-left: 10px;
+        img{
+            width: 50px;
+        }
+    }
+
+    .editar-btn{
+        font-weight: 100;
+    }
+
+    p{
+        margin-top: 10px;
+        color: rgb(81, 81, 81);
+        margin-left: 20px;
+    }
+    span{
+        font-weight: bold;
+        color: black;
+        font-weight: bold;
+    }
+
+    a{
+        display: flex;
+        align-items: flex-end;
+        text-decoration: none;
+        font-weight: bold;
+        color: #0066FF;
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+    }
+
+   
 }

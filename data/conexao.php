@@ -1,7 +1,7 @@
 <?php
 
 $host="localhost";
-$dbnmae="estoque3";
+$dbname="estoque3";
 $user="root";
 $password="root";
 
@@ -9,7 +9,7 @@ $conn = new mysqli(
     $host,
     $user,
     $password,
-    $dbnmae   
+    $dbname   
 );
 
 if($conn ->connect_error){

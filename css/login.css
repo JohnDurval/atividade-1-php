@@ -1,0 +1,112 @@
+.login-container{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;    
+    margin-bottom: 50px;
+    
+}
+
+.login{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 12px;
+    background-color: white;
+    border: solid 1px rgb(143, 143, 143);
+
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    .h1-titulo{
+        display: flex;
+        justify-content: center;
+        color: rgb(83, 83, 255);
+        margin-bottom: 30px;
+
+        h1{
+            font-family: "Poppins";
+            font-size:25px;
+        }
+    }
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+input{
+    display: flex;
+    width: 0 auto;
+    padding: 15px;
+    border: none;
+    background-color: rgb(221, 221, 221);
+    border-radius: 8px;
+}
+
+.edits-btn{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    a{
+        text-decoration: none;
+        color: black;
+
+        span{
+            color: blue;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+     button{
+        display: flex;
+        justify-content: center;
+        color: rgb(83, 83, 255);
+        border-radius: 12px;
+        border: 2px solid rgb(83, 83, 255);
+        margin: 0 auto;
+        padding: 5px;
+        width: 180px;
+        font-family: "Poppins";
+        font-weight: bold;
+        font-size: 14px;
+   
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        text-decoration: none;
+        
+        &:hover{
+            background-color: rgb(83, 83, 255);
+            color: white;
+
+            transition: ease 0.2s;
+        }
+    }
+}
+
+.mensagem-erro{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 200;
+    color: red;
+    margin-top: 10px;
+    text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 <?php require "./data/conexao.php";
-
+require "./data/auth.php";
 $sql = "Select * from usuarios";
 $resultado = $conn->query($sql);
 
@@ -20,23 +20,31 @@ $resultado = $conn->query($sql);
     <link
         href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Listar Usuarios</title>
+    <title>Listar Usuarios|Lojinha</title>
 </head>
 
 <body>
     <?php include "./view/header.php" ?>
 
     <div class="user-container">
-        <h1>Usuarios</h1>
-        <a href="./cadastrar-usuarios.php">Criar usuarios</a>
-
+        <div class="usuario-btn">
+            <h1>Usuarios</h1>
+            <a href="./cadastrar-usuarios.php">Criar um usuário <img src="./imagens/icon-adicionar.png" alt="icon de adicionar"></a>
+        </div>
         <div class="usuarios">
             <?php while ($usuario = $resultado->fetch_object()): ?>
                 <div class="usuario">
-                    <p>id: <?= $usuario->id ?></p>
-                    <p>email: <?= $usuario->email ?></p>
-                    <p>nome: <?= $usuario->nome ?></p>
-                    <p>senha: <?= $usuario->senha ?></p>
+               
+                    <div class="foto-user">
+                        <img src="./imagens/user-cadastrado.png" alt="">
+                        <a class="editar-btn" href="editar-usuario.php?id=<?= $usuario->id?>">Editar usuário</a>
+                    </div>
+                    
+                    <p> <span>id:</span> <?= $usuario->id ?></p>
+                    <p><span>email:</span> <?= $usuario->email ?></p>
+                    <p><span>nome:</span> <?= $usuario->nome ?></p>
+                    <p><span>senha:</span> <?= $usuario->senha ?></p>
+                    
                 </div>
             <?php endwhile; ?>
         </div>
